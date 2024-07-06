@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+</head>
+<body>
+  <h1>Students List</h1>
+  <ul>
+    <% list.forEach(student => { %>
+      <li><a href="/students/<%= student.id %>"><%= student.name %></a></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
